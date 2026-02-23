@@ -17,53 +17,60 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* whole sentence */
 .sentence {
   display: flex;
   align-items: center;
-  font-size: 36px; /* slightly smaller overall */
+  font-size: 32px;
+  line-height: 1;
 }
 
 /* try + about */
 .fixed {
   font-family: "Headline";
-  font-size: 16px; /* smaller than spinning words */
-  margin: 0 40px;
+  font-size: 16px;
+  margin: 0 34px;
   opacity: 1;
 }
 
-/* slot window */
+/* slot holder */
 .slot-container {
-  height: 150px;
-  overflow: hidden;
+  height: 84px;
+  overflow: visible;
   position: relative;
-  margin: 0 20px;
+  margin: 0 14px;
+  display: flex;
+  align-items: center;
 }
 
 /* spinning column */
 .slot {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   font-family: "WordFont";
-  font-size: 36px;
+  font-size: 30px;
+  will-change: transform;
 }
 
 /* individual word */
 .slot div {
-  height: 150px;
+  height: 84px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: transform 0.2s;
+  justify-content: flex-start;
+  text-align: left;
+  transition: transform 0.2s, opacity 0.2s;
+  white-space: nowrap;
+  opacity: 0.15;
 }
 
 /* selected word */
 .slot div.active {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 /* faint instruction */
@@ -75,9 +82,3 @@ body {
   letter-spacing: 2px;
   font-family: "Helvetica";
 }
-
-
-
-
-
-
