@@ -30,7 +30,7 @@ body {
 /* try + about */
 .fixed {
   font-family: "Headline";
-  font-size: 32px; /* smaller than spinning words */
+  font-size: 20px; /* smaller than spinning words */
   margin: 0 20px;
   opacity: 0.8;
   text-shadow: 0 0 8px rgba(255,255,255,0.3);
@@ -50,7 +50,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "WordFont";
-  font-size: 48px;
+  font-size: 36px;
 }
 
 /* individual word */
@@ -79,3 +79,4 @@ body {
   letter-spacing: 2px;
   font-family: "Headline";
 }
+
