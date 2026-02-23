@@ -27,6 +27,9 @@ const topics = [
 const verbSlot = document.getElementById("verb-slot");
 const topicSlot = document.getElementById("topic-slot");
 
+const COPIES = 15;
+const MIDDLE_COPY = Math.floor(COPIES / 2);
+const ROW_HEIGHT = 64;
 const COPIES = 7;
 const MIDDLE_COPY = Math.floor(COPIES / 2);
 const ROW_HEIGHT = 84;
@@ -91,6 +94,7 @@ function spin(slot, words) {
     const deltaToTarget =
       (targetWordIndex - currentWordIndex + wordsCount) % wordsCount;
 
+    const extraFullTurns = (1 + Math.floor(Math.random() * 2)) * wordsCount;
     const extraFullTurns = (2 + Math.floor(Math.random() * 2)) * wordsCount;
     const targetAbsolute = currentAbsolute + extraFullTurns + deltaToTarget;
 
