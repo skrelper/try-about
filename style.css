@@ -23,7 +23,7 @@ body {
 /* whole sentence */
 .sentence {
   display: flex;
-  align-items: center;
+  align-items: left;
   font-size: 36px; /* slightly smaller overall */
 }
 
@@ -37,10 +37,10 @@ body {
 
 /* slot window */
 .slot-container {
-  height: 70px;
+  height: 150px;
   overflow: hidden;
   position: relative;
-  margin: 0 40px;
+  margin: 0 20px;
 }
 
 /* spinning column */
@@ -75,6 +75,7 @@ body {
   letter-spacing: 2px;
   font-family: "Helvetica";
 }
+
 
 
 
