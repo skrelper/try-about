@@ -15,8 +15,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   overflow: hidden;
 }
 
@@ -24,14 +24,14 @@ body {
 .sentence {
   display: flex;
   align-items: center;
-  font-size: 48px; /* slightly smaller overall */
+  font-size: 36px; /* slightly smaller overall */
 }
 
 /* try + about */
 .fixed {
   font-family: "Headline";
   font-size: 16px; /* smaller than spinning words */
-  margin: 0 20px;
+  margin: 0 40px;
   opacity: 1;
 }
 
@@ -75,6 +75,7 @@ body {
   letter-spacing: 2px;
   font-family: "Helvetica";
 }
+
 
 
 
