@@ -15,15 +15,15 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 /* whole sentence */
 .sentence {
   display: flex;
-  align-items: left;
+  align-items: center;
   font-size: 36px; /* slightly smaller overall */
 }
 
@@ -47,7 +47,7 @@ body {
 .slot {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   font-family: "WordFont";
   font-size: 36px;
 }
@@ -56,8 +56,8 @@ body {
 .slot div {
   height: 150px;
   display: flex;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.2s;
 }
 
