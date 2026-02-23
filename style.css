@@ -12,54 +12,70 @@ body {
   background: black;
   color: white;
   height: 100vh;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  overflow: hidden;
 }
 
+/* whole sentence */
 .sentence {
   display: flex;
   align-items: center;
-  font-size: 60px;
+  font-size: 48px; /* slightly smaller overall */
 }
 
+/* try + about */
 .fixed {
   font-family: "Headline";
+  font-size: 32px; /* smaller than spinning words */
   margin: 0 20px;
+  opacity: 0.8;
+  text-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
 
+/* slot window */
 .slot-container {
-  height: 80px;
+  height: 70px;
   overflow: hidden;
   position: relative;
   margin: 0 20px;
 }
 
+/* spinning column */
 .slot {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "WordFont";
-  transition: transform 0.2s ease-out;
+  font-size: 48px;
 }
 
+/* individual word */
 .slot div {
-  height: 80px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s;
+  transition: transform 0.2s, text-shadow 0.2s;
 }
 
-/* center magnification */
+/* selected word */
 .slot div.active {
-  transform: scale(1.2);
+  transform: scale(1.15);
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.7),
+    0 0 25px rgba(255,255,255,0.4);
 }
 
-button {
-  margin-top: 40px;
-  padding: 10px 30px;
-  font-size: 20px;
+/* faint instruction */
+.hint {
+  position: absolute;
+  bottom: 40px;
+  font-size: 14px;
+  opacity: 0.2;
+  letter-spacing: 2px;
+  font-family: "Headline";
 }
