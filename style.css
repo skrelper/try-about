@@ -25,7 +25,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   position: relative;
 }
 
@@ -50,35 +49,27 @@ body::after {
   bottom: 0;
   height: 30vh;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0));
-  overflow: visible;
 }
 
 /* whole sentence */
 .sentence {
   display: flex;
   align-items: center;
-  font-size: 28px;
-  line-height: 1;
-  z-index: 1;
   font-size: 32px;
   line-height: 1;
+  z-index: 1;
 }
 
 /* try + about */
 .fixed {
   font-family: "Headline";
   font-size: 16px;
-  margin: 0 18px;
   margin: 0 34px;
   opacity: 1;
 }
 
 /* slot holder */
 .slot-container {
-  height: 64px;
-  overflow: visible;
-  position: relative;
-  margin: 0 8px;
   height: 84px;
   overflow: visible;
   position: relative;
@@ -96,14 +87,12 @@ body::after {
   flex-direction: column;
   align-items: flex-start;
   font-family: "WordFont";
-  font-size: 26px;
   font-size: 30px;
   will-change: transform;
 }
 
 /* individual word */
 .slot div {
-  height: 64px;
   height: 84px;
   display: flex;
   align-items: center;
@@ -124,11 +113,8 @@ body::after {
   position: absolute;
   bottom: 40px;
   font-size: 14px;
-  opacity: 0.35;
-  letter-spacing: 2px;
-  font-family: "Helvetica";
-  z-index: 3;
   opacity: 0.2;
   letter-spacing: 2px;
   font-family: "Helvetica";
+  z-index: 3;
 }
